@@ -1,0 +1,32 @@
+.laatikko {
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.laatikko h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.laatikko textarea {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.laatikko button {
+    background-color: black;
+    color: white;
+    padding: 7px 20px;
+    margin: 3px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.laatikko button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}

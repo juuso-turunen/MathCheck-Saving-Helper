@@ -1,0 +1,15 @@
+{
+    "name": "MathCheck Saving Helper",
+    "version": "3.1.1",
+    "description": "",
+    "manifest_version": 3,
+    "author": "Juuso Turunen",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "MathCheck Saving Helper"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+      ]
+}
