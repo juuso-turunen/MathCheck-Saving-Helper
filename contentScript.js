@@ -3,7 +3,7 @@ document.getElementById("hae-vastaukset").addEventListener("click", () => {
         const tab = tabs[0];
 
         function HaeVastaukset() {
-            sivunTextareat = document.body.querySelectorAll("textarea[name='exam']");
+            sivunTextareat = document.body.querySelectorAll("textarea:not(textarea[name='hidden'])");
             sivunCheckboxit = document.body.querySelectorAll("input[type='checkbox']");
             sivunRadiot = document.body.querySelectorAll("input[type='radio']");
             vastaukset = [new Array(sivunTextareat.length), new Array(sivunCheckboxit.length), new Array(sivunRadiot.length)]; // Luodaan uusi tyhjä taulukko
@@ -38,7 +38,7 @@ document.getElementById("lataa-vastaukset").addEventListener("click", () => {
         const tab = tabs[0];
 
         function LataaVastaukset(ladattavatVastaukset) {
-            sivunTextareat = document.body.querySelectorAll("textarea[name='exam']");
+            sivunTextareat = document.body.querySelectorAll("textarea:not(textarea[name='hidden'])");
             sivunCheckboxit = document.body.querySelectorAll("input[type='checkbox']");
             sivunRadiot = document.body.querySelectorAll("input[type='radio']");
 
@@ -71,7 +71,7 @@ document.getElementById("lataa-vastaukset-url").addEventListener("click", () => 
             const urlParams = new URLSearchParams(window.location.search);
             ladattavatVastaukset = JSON.parse(decodeURIComponent(urlParams.get('vastaukset'))/*.replaceAll("\\","\\\\").replaceAll("\n", "\\n")*/);
 
-            sivunTextareat = document.body.querySelectorAll("textarea[name='exam']");
+            sivunTextareat = document.body.querySelectorAll("textarea:not(textarea[name='hidden'])");
             sivunCheckboxit = document.body.querySelectorAll("input[type='checkbox']");
             sivunRadiot = document.body.querySelectorAll("input[type='radio']");
 
